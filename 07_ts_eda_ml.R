@@ -308,7 +308,7 @@ biomtk_ts_features_all <- biomtk_ts |>
   # Add moving window statistics
  tk_augment_slidify(.value   = contains("BIOMASS"),
                    .f       = ~ mean(.x, na.rm = TRUE), 
-                   .period  = c(9, 12),
+                   .period  = c(3, 6),
                    .partial = TRUE,
                    .align   = "center")
 
